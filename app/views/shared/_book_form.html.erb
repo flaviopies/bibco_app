@@ -1,0 +1,10 @@
+<%= form_for(@book) do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+  <div class="field">
+    <%= f.text_field :title, placeholder: "Title" %>
+  </div>
+  <div class="field">
+    <%= f.text_field :author, placeholder: "Author" %>
+  </div>
+  <%= f.submit "Create!", class: "btn btn-primary" %>
+<% end %>	

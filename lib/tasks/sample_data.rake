@@ -4,6 +4,7 @@ namespace :db do
     make_users
     make_microposts
     make_relationships
+    make_books
   end
 end
 
@@ -39,4 +40,13 @@ def make_relationships
   followers      = users[3..40]
   followed_users.each { |followed| user.follow!(followed) }
   followers.each      { |follower| follower.follow!(user) }
+end
+
+def make_books
+  users = User.all.limit(20)
+  20.times do
+    title = Faker::Lorem.word.capitalize
+    author = Faker::Name.name
+    users.each { |user| user.books.create!(title: title, author: author)  }
+  end
 end

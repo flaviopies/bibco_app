@@ -18,10 +18,13 @@ html {
 
 body {
   padding-top: 60px;
+  background-image:url('2.jpg');
+  background-size: cover;  
 }
 
 section {
   overflow: auto;
+
 }
 
 textarea {
@@ -35,10 +38,24 @@ textarea {
   }
 }
 
+.hero-unit {
+  padding: 60px;/* CHANGE PADDING HERE*/
+  margin-bottom: 30px; 
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  background-color: inherit; /* CHANGE BACKGROUND HERE*/
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 0px;
+  color: #E0E0E0;
+}
+
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
+  color: #E0E0E0;
 }
 
 h1 {
@@ -54,12 +71,12 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #999;
 }
 
 p {
   font-size: 1.1em;
   line-height: 1.7em;
+  color: #E0E0E0;
 }
 
 /* header */
@@ -69,13 +86,13 @@ p {
   margin-right: 10px;
   font-size: 1.7em;
   color: #fff;
-  text-transform: uppercase;
-  letter-spacing: -1px;
+  text-transform: uppercase; 
+  letter-spacing: 1px;
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
   &:hover {
-    color: #fff;
+    color: #E0E0E0;
     text-decoration: none;
   }
 }
@@ -181,7 +198,12 @@ input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
   margin-bottom: 15px;
+  color: #E0E0E0;
   @include box_sizing;
+}
+
+label {
+  color: #E0E0E0;
 }
 
 input {
@@ -206,29 +228,43 @@ input {
 .users {
   list-style: none;
   margin: 0;
+  line-height:1.5em;
   li {
-    overflow: auto;
     padding: 10px 0;
     border-top: 1px solid $grayLighter;
+    float:left;
+    display:inline;
+    border-bottom: 1px solid $grayLighter;
     &:last-child {
-      border-bottom: 1px solid $grayLighter;
+      width: 100%;
+      padding: 10px 0;
     }
   }
 }
+
+#triple li  { width: 33.333%;}
 
 /* microposts */
 
 .microposts {
   list-style: none;
   margin: 10px 0 0 0;
-
   li {
     padding: 10px 0;
     border-top: 1px solid #e8e8e8;
+    float:left;
+    display:inline;
   }
 }
-.content {
+#double li  { width: 50%;}
+
+.title_book {
   display: block;
+  color: white;
+}
+.author_book {
+  display: block;
+  color: white;
 }
 .timestamp {
   color: $grayLight;

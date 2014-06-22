@@ -8,27 +8,24 @@
         <%= render 'shared/stats' %>
       </section>
       <section>
-        <%= render 'shared/micropost_form' %>
+        <%= render 'shared/book_form' %>
       </section>
     </aside>
     <div class="span8">
-      <h3>Micropost Feed</h3>
+      <h3>Book Feed</h3>
       <%= render 'shared/feed' %>
     </div>
   </div>
 <% else %>
   <div class="center hero-unit">
-    <h1>Welcome to the Sample App</h1>
+    <h1>Shared Library</h1>
 
     <h2>
-      This is the home page for the
-      <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
-      sample application.
+      Welcome to the home page of the first version of the Shared Library app. 
     </h2>
 
     <%= link_to "Sign up now!", signup_path,
                                 class: "btn btn-large btn-primary" %>
   </div>
 
-  <%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
 <% end %>
