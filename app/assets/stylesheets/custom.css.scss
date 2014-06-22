@@ -3,6 +3,8 @@
 /* mixins, variables, etc. */
 
 $grayMediumLight: #eaeaea;
+$color_of_font: black;
+
 
 @mixin box_sizing {
   -moz-box-sizing: border-box;
@@ -18,13 +20,12 @@ html {
 
 body {
   padding-top: 60px;
-  background-image:url('2.jpg');
+  background-image:url('images/2.jpg');
   background-size: cover;  
 }
 
 section {
   overflow: auto;
-
 }
 
 textarea {
@@ -48,14 +49,14 @@ textarea {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 0px;
-  color: #E0E0E0;
+  color: $color_of_font;
 }
 
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
-  color: #E0E0E0;
+  color: $color_of_font;
 }
 
 h1 {
@@ -76,7 +77,7 @@ h2 {
 p {
   font-size: 1.1em;
   line-height: 1.7em;
-  color: #E0E0E0;
+  color: $color_of_font;
 }
 
 /* header */
@@ -103,7 +104,7 @@ footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
-  color: #999;
+  color: $color_of_font;
   a {
     color: #555;
     &:hover {
@@ -198,12 +199,12 @@ input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
   margin-bottom: 15px;
-  color: #E0E0E0;
+  color: $color_of_font;
   @include box_sizing;
 }
 
 label {
-  color: #E0E0E0;
+  color: $color_of_font;
 }
 
 input {
@@ -260,11 +261,11 @@ input {
 
 .title_book {
   display: block;
-  color: white;
+  color: $color_of_font;
 }
 .author_book {
   display: block;
-  color: white;
+  color: $color_of_font;
 }
 .timestamp {
   color: $grayLight;
