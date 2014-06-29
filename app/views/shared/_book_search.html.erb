@@ -1,0 +1,4 @@
+<%= form_tag(static_pages_home_path, :method => "get", id: "book_search-form") do %>
+<%= text_field_tag :book_search, params[:book_search], placeholder: "Search Books" %>
+<%= submit_tag "Book Search", :name => "nil", class: "btn btn-primary" %>
+<% end %>
