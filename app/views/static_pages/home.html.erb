@@ -10,10 +10,18 @@
       <section>
         <%= render 'shared/book_form' %>
       </section>
+      <section>
+        <%= render 'shared/book_search' %>
+      </section>
     </aside>
     <div class="span8">
+    <% if @book_search_result_itens.any? %>
+      <h3>Book Search</h3>
+      <%= render 'shared/book_search_result' %>
+	<% else %>
       <h3>Book Feed</h3>
       <%= render 'shared/feed' %>
+    <<% end %>>
     </div>
   </div>
 <% else %>

@@ -3,6 +3,8 @@
 /* mixins, variables, etc. */
 
 $grayMediumLight: #eaeaea;
+$fontcolor: black;
+
 
 @mixin box_sizing {
   -moz-box-sizing: border-box;
@@ -18,7 +20,7 @@ html {
 
 body {
   padding-top: 60px;
-  background-image:url('2.jpg');
+  #background-image:url('2.jpg');
   background-size: cover;  
 }
 
@@ -48,14 +50,14 @@ textarea {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 0px;
-  color: #E0E0E0;
+  color: $fontcolor;
 }
 
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
-  color: #E0E0E0;
+  color: $fontcolor;
 }
 
 h1 {
@@ -76,7 +78,7 @@ h2 {
 p {
   font-size: 1.1em;
   line-height: 1.7em;
-  color: #E0E0E0;
+  color: $fontcolor;
 }
 
 /* header */
@@ -103,7 +105,7 @@ footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
-  color: #999;
+  color: $fontcolor;
   a {
     color: #555;
     &:hover {
@@ -198,7 +200,7 @@ input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
   margin-bottom: 15px;
-  color: #E0E0E0;
+  color: $fontcolor;
   @include box_sizing;
 }
 
@@ -249,6 +251,7 @@ input {
 .microposts {
   list-style: none;
   margin: 10px 0 0 0;
+  text-align: center;
   li {
     padding: 10px 0;
     border-top: 1px solid #e8e8e8;
@@ -260,11 +263,11 @@ input {
 
 .title_book {
   display: block;
-  color: white;
+  color: $fontcolor;
 }
 .author_book {
   display: block;
-  color: white;
+  color: $fontcolor;
 }
 .timestamp {
   color: $grayLight;
@@ -280,3 +283,9 @@ aside {
   }
 }
 
+/* book image */
+
+.book_image {
+  width: 80px;
+  height: 103px;  
+}

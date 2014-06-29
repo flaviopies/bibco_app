@@ -18,6 +18,14 @@ class BooksController < ApplicationController
     redirect_to root_url
   end
 
+  def book_search=(book_search)
+    self.book_search
+  end
+
+  #def book_search
+  #  @book_search
+  #end
+
   private
 
     def book_params

@@ -15,7 +15,7 @@
     <%= render 'follow_form' if signed_in? %>
     <% if @user.books.any? %>
       <h3>Books (<%= @user.books.count %>)</h3>
-      <ol class="microposts">
+      <ol class="microposts" id="triple">
         <%= render @books %>
       </ol>
       <%= will_paginate @books %>

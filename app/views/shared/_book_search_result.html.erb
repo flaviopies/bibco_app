@@ -1,0 +1,6 @@
+<% if @book_search_result_itens.any? %>
+  <ol class="microposts" id="triple">
+    <%= render partial: 'shared/book_search_result_item', collection: @book_search_result_itens %>  
+  </ol>	
+<% end %>
+

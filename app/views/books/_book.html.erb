@@ -1,13 +1,16 @@
 <li>
-  <span class="content"><%= book.title %></span>
-  <span class="content"><%= book.author %></span>
-  <span class="timestamp">
-    Posted <%= time_ago_in_words(book.created_at) %> ago.
-  </span>
-  <% if current_user?(book.user) %>
-    <%= link_to "delete", book, method: :delete,
-                                     data: { confirm: "You sure?" },
-                                     title: book.title,
-                                     author: book.author %>
-  <% end %>
+  <%= image_tag "bookworm.jpg" , class: "book_image"%><br />
+	<span12 class="user">
+	  <%= link_to book.user.name, book.user %>
+	</span12>
+	<span12 class="title_book"><%= book.title %></span12>
+	<span12 class="author_book"><%= book.author %></span12>
+		<span12 class="timestamp">
+		  Posted <%= time_ago_in_words(book.created_at) %> ago.
+		</span12>
+	  <% if current_user?(book.user) %>
+		<%= link_to "delete", book, method: :delete,
+		                                 data: { confirm: "You sure?" },
+		                                 title: book.title %>
+	  <% end %>
 </li>
