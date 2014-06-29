@@ -10,6 +10,8 @@ gem 'rspec-rails', '2.12.0'
 gem 'faker', '1.1.2'
 gem 'will_paginate', '3.0.4'
 gem 'bootstrap-will_paginate', '0.0.9'
+gem 'google-analytics-rails'
+
 
 # Use sqlite3 as the database for Active Record
 group :development do
