@@ -3,12 +3,7 @@
 /* mixins, variables, etc. */
 
 $grayMediumLight: #eaeaea;
-<<<<<<< HEAD
-$color_of_font: black;
-=======
 $fontcolor: black;
-
->>>>>>> bibco_first_version
 
 @mixin box_sizing {
   -moz-box-sizing: border-box;
@@ -24,11 +19,8 @@ html {
 
 body {
   padding-top: 60px;
-<<<<<<< HEAD
   background-image:url('images/2.jpg');
-=======
   #background-image:url('2.jpg');
->>>>>>> bibco_first_version
   background-size: cover;  
 }
 
@@ -57,22 +49,14 @@ textarea {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 0px;
-<<<<<<< HEAD
-  color: $color_of_font;
-=======
   color: $fontcolor;
->>>>>>> bibco_first_version
 }
 
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
-<<<<<<< HEAD
-  color: $color_of_font;
-=======
   color: $fontcolor;
->>>>>>> bibco_first_version
 }
 
 h1 {
@@ -93,11 +77,7 @@ h2 {
 p {
   font-size: 1.1em;
   line-height: 1.7em;
-<<<<<<< HEAD
-  color: $color_of_font;
-=======
   color: $fontcolor;
->>>>>>> bibco_first_version
 }
 
 /* header */
@@ -124,11 +104,7 @@ footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
-<<<<<<< HEAD
-  color: $color_of_font;
-=======
   color: $fontcolor;
->>>>>>> bibco_first_version
   a {
     color: #555;
     &:hover {
@@ -223,16 +199,12 @@ input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
   margin-bottom: 15px;
-<<<<<<< HEAD
-  color: $color_of_font;
-=======
   color: $fontcolor;
->>>>>>> bibco_first_version
   @include box_sizing;
 }
 
 label {
-  color: $color_of_font;
+  color: $fontcolor;
 }
 
 input {
@@ -290,19 +262,11 @@ input {
 
 .title_book {
   display: block;
-<<<<<<< HEAD
-  color: $color_of_font;
-}
-.author_book {
-  display: block;
-  color: $color_of_font;
-=======
   color: $fontcolor;
 }
 .author_book {
   display: block;
   color: $fontcolor;
->>>>>>> bibco_first_version
 }
 .timestamp {
   color: $grayLight;
